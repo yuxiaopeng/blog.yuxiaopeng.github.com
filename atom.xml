@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Roc's Blog]]></title>
-  <link href="http://yuxiaopeng.github.com/atom.xml" rel="self"/>
-  <link href="http://yuxiaopeng.github.com/"/>
-  <updated>2016-08-25T00:59:14+08:00</updated>
-  <id>http://yuxiaopeng.github.com/</id>
+  <link href="http://yuxiaopeng.github.io/atom.xml" rel="self"/>
+  <link href="http://yuxiaopeng.github.io/"/>
+  <updated>2016-08-25T01:09:16+08:00</updated>
+  <id>http://yuxiaopeng.github.io/</id>
   <author>
     <name><![CDATA[Roc]]></name>
     <email><![CDATA[uxiaopeng@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[委托、协议、目标-动作]]></title>
-    <link href="http://yuxiaopeng.github.com/blog/2014/07/09/delegate-protocol-target-action/"/>
+    <link href="http://yuxiaopeng.github.io/blog/2014/07/09/delegate-protocol-target-action/"/>
     <updated>2014-07-09T18:30:00+08:00</updated>
-    <id>http://yuxiaopeng.github.com/blog/2014/07/09/delegate-protocol-target-action</id>
+    <id>http://yuxiaopeng.github.io/blog/2014/07/09/delegate-protocol-target-action</id>
     <content type="html"><![CDATA[<h3>1.委托（Delegation）</h3>
 
 <p>委托是一个常用、简单、灵活，但又不好解释的模式，下面我们从以下几个方面来看看什么是委托？</p>
@@ -92,7 +92,7 @@
 <h3>3.目标-动作(Target-Action)</h3>
 
 <p>目标-动作（target-action）是一另外一种面向对象的回调模式。其工作方式为：当某个特定的事件发生（如按下按钮）时，发生事件的一方向指定的目标对象发送一个之前设置好的动作消息。针对不同的事件（例如轻按、连按或按住不放），需要创建不同的目标-动作。使用委托时，只要设置一个委托对象，就可以向该对象发送不同的事件消息。委托对象要为其“关心”的每一个事件实现相应的方法，如下图：  <br/>
-<img src='http://yuxiaopeng.github.com/images/2014/07/delegate_target_action.png' /></p>
+<img src='http://yuxiaopeng.github.io/images/2014/07/delegate_target_action.png' /></p>
 
 <h3>4.继承与委托</h3>
 
@@ -137,9 +137,9 @@
   
   <entry>
     <title type="html"><![CDATA[设计模式之观察者模式Observer]]></title>
-    <link href="http://yuxiaopeng.github.com/blog/2014/07/07/observer-of-design-patterns/"/>
+    <link href="http://yuxiaopeng.github.io/blog/2014/07/07/observer-of-design-patterns/"/>
     <updated>2014-07-07T19:30:00+08:00</updated>
-    <id>http://yuxiaopeng.github.com/blog/2014/07/07/observer-of-design-patterns</id>
+    <id>http://yuxiaopeng.github.io/blog/2014/07/07/observer-of-design-patterns</id>
     <content type="html"><![CDATA[<h3>1.何为观察者模式（Observer）</h3>
 
 <p><strong>观察者模式</strong>（又被称为发布/订阅模式Publish-Subscribe或依赖模式Dependents）是软件设计模式的一种。即定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都得到通知并被自动更新。在此种模式中，一个目标对象管理所有相依赖于它的观察者对象，并且在它本身的状态改变时主动发出通知。这通常通过调用各观察者所提供的方法来实现。此种模式通常被用来实现分布式事件处理系统。此模式也是MVC模式的关键组成部分。在许多编程中都用到了观察者模式，包括几乎所有的GUI程序都用到了此模式，例如：Mac、iOS、Win操作系统的图形用户界面。</p>
@@ -152,7 +152,7 @@
 
 <p>实现思路：主题（Subject）持有所有的观察者列表，而观察者（Observer）监听主题对象。主题对象状态发生变化时，会通知所有持有的观察者对象，使它们能够做出响应。结构如下图：</p>
 
-<p><img src='http://yuxiaopeng.github.com/images/2014/07/Observer_Pattern.png' /></p>
+<p><img src='http://yuxiaopeng.github.io/images/2014/07/Observer_Pattern.png' /></p>
 
 <p>创建Observer观察者协议：</p>
 
@@ -467,7 +467,7 @@
 <ul>
 <li>NSNotification &amp; NSNotificationCenter  <br/>
 Cocoa通知机制，遵循广播模型（broadcast model），通过注册成为通知中心的观察者对象，当事件发生时观察者会收到消息并做出响应。这种机制使主题与观察者以一种松耦合的方式通信。主题与观察者在通信时无需了解对方的实现。通过发送消息可以达到代码的彻底解耦。  <br/>
-<img src='http://yuxiaopeng.github.com/images/2014/07/notificationcenter.jpg' />  <br/>
+<img src='http://yuxiaopeng.github.io/images/2014/07/notificationcenter.jpg' />  <br/>
 任何对象都可以观察通知，但要做到这一点，该对象必须注册，以接收通知。在注册时，必须指定一个选择器，以确定由通知传送所调用的方法；方法签名必须只有一个参数：通知对象。注册后，观察者也可以指定发布对象。通知机制中涉及两个重要的类：  <br/>
 1）NSNotification: 这是消息的载体，通过它可以把消息内容传递给观察者。  <br/>
 2）NSNotificationCenter: 实现NSNotificationCenter的原理是一个观察者模式，通过调用静态方法defaultCenter就可以获取这个通知中心的对象，而NSNotificationCenter同时是一个单例模式，这个通知中心的对象会一直存在于一个应用的整个生命周期中。一个NSNotificationCenter可以有许多的通知消息NSNotification，对于每一个NSNotification可以有很多的观察者Observer来接收通知。  <br/>
@@ -552,14 +552,14 @@ Notifications和KVO者是Cocoa对观察者模式的实践。尽管两者依赖�
   
   <entry>
     <title type="html"><![CDATA[iOS核心技术之：内存管理之二手动内存管理]]></title>
-    <link href="http://yuxiaopeng.github.com/blog/2014/07/04/memory-management-2/"/>
+    <link href="http://yuxiaopeng.github.io/blog/2014/07/04/memory-management-2/"/>
     <updated>2014-07-04T18:01:00+08:00</updated>
-    <id>http://yuxiaopeng.github.com/blog/2014/07/04/memory-management-2</id>
+    <id>http://yuxiaopeng.github.io/blog/2014/07/04/memory-management-2</id>
     <content type="html"><![CDATA[<h3>1.关于内存管理</h3>
 
 <p>应用程序内存管理是：“在程序运行时开辟内存空间、使用内存空间，并在程序完成时释放内存空间的过程”。写得好的程序，会尽可能少占用内存。在Objectiv-C中，内存管理被看做是在很多数据和代码中分配受限内存资源所有权（Ownership）的一种方式。虽然内存管理通常被认为是针对单个对象级别进行的，但实际上我们的任务是管理“对象图”(Object Graph)，你需要确保除了你实际需要的对象之外，内存中没有其它的对象。</p>
 
-<p><img src='http://yuxiaopeng.github.com/images/2014/07/memory_management_2x.png' width='600' /></p>
+<p><img src='http://yuxiaopeng.github.io/images/2014/07/memory_management_2x.png' width='600' /></p>
 
 <ul>
 <li>Objective-C提供了两种内存管理方式：  <br/>
@@ -582,9 +582,9 @@ Notifications和KVO者是Cocoa对观察者模式的实践。尽管两者依赖�
 <li><p>引用计数系统机制  <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; 可以用开关房间的灯为例来说明引用计数的机制，此处引自《Pro Multithreading and Memory Management for iOS and OS X with ARC， Grand Central Dispatch， and Blocks》一书。  <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; 当上班进入办公室时需要照明，此时需要开灯；而当下班离开办公室时不需要照明，此时需要关灯，如图1-1所示：  <br/>
-<img src='http://yuxiaopeng.github.com/images/2014/07/reference_counting_1.png' width='600px'/>  <br/>
+<img src='http://yuxiaopeng.github.io/images/2014/07/reference_counting_1.png' width='600px'/>  <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; 假设办公室里的照明设备只有一个。上班进入办公室的人需要照明，所以要把灯打开。而对于下班离开办公室的人来说，已经不需要照明了，所以要把灯关掉。若是很多人上下班，每个人都开灯或是关灯，那么办公室的情况又将如何呢？最早下班离开的人如果关了灯，那就会像图 1-2 那样，办公室里还没走的所有人都将处于一片黑暗之中。  <br/>
-<img src='http://yuxiaopeng.github.com/images/2014/07/reference_counting_2.png' width='600'/>  <br/>
+<img src='http://yuxiaopeng.github.io/images/2014/07/reference_counting_2.png' width='600'/>  <br/>
 解决这一问题的办法是使办公室在还有至少1人的情况下保持开灯状态，而在无人时保持关灯状态。  <br/>
 (1)最早进入办公室的人开灯。  <br/>
 (2)之后进入办公室的人，需要照明。  <br/>
@@ -597,10 +597,10 @@ Notifications和KVO者是Cocoa对观察者模式的实践。尽管两者依赖�
 (3)每当有人下班离开办公室，“需要照明的人数”就减 1。如计数值从 2 变成 1。   <br/>
 (4)最后一个人下班离开办公室时，“需要照明的人数”减 1。计数值从 1 变成了 0，因此要关灯。  <br/>
 这样就能在不需要照明的时候保持关灯状态。办公室中仅有的照明设备得到了很好的管理，如图1-3所示。  <br/>
-<img src="http://yuxiaopeng.github.com/images/2014/07/reference_counting_3.png" width="600px" />  <br/>
+<img src="http://yuxiaopeng.github.io/images/2014/07/reference_counting_3.png" width="600px" />  <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; 在Objective-C中，“对象”相当于办公室的照明设备。在现实世界中办公室的照明设备只有一个，但在Objective-C的世界里，虽然计算机资源有限，但一台计算机可以同时处理好几个对象。  <br/>
-&nbsp;&nbsp;&nbsp;&nbsp; 此外，“对象的使用环境”相当于上班进入办公室的人。虽然这里的“环境”有时也指在运 行中的程序代码、变量、变量作用域、对象等，但在概念上就是使用对象的环境。上班进入办公 室的人对办公室照明设备发出的动作，与Objective-C中的对应关系则如表1-1所示。  <br/> <img src="http://yuxiaopeng.github.com/images/2014/07/reference_counting_table_1.png" width="600px" />  <br/> &nbsp;&nbsp;&nbsp;&nbsp; 使用计数功能计算需要照明的人数，使办公室的照明得到了很好的管理。同样，使用引用计 数功能，对象也就能够得到很好的管理，这就是 Objective-C 的内存管理。如图1-4所示。  <br/>
-<img src='http://yuxiaopeng.github.com/images/2014/07/reference_counting_4.png' width='600'/>  <br/></p></li>
+&nbsp;&nbsp;&nbsp;&nbsp; 此外，“对象的使用环境”相当于上班进入办公室的人。虽然这里的“环境”有时也指在运 行中的程序代码、变量、变量作用域、对象等，但在概念上就是使用对象的环境。上班进入办公 室的人对办公室照明设备发出的动作，与Objective-C中的对应关系则如表1-1所示。  <br/> <img src="http://yuxiaopeng.github.io/images/2014/07/reference_counting_table_1.png" width="600px" />  <br/> &nbsp;&nbsp;&nbsp;&nbsp; 使用计数功能计算需要照明的人数，使办公室的照明得到了很好的管理。同样，使用引用计 数功能，对象也就能够得到很好的管理，这就是 Objective-C 的内存管理。如图1-4所示。  <br/>
+<img src='http://yuxiaopeng.github.io/images/2014/07/reference_counting_4.png' width='600'/>  <br/></p></li>
 <li><p>基本内存管理策略  <br/>
 内存管理的模型，是基于对象的所有权。只要一个对象有所有者，它就会在内存中一直存在；如果这个对象没有了所有者，那么系统就会自动将其销毁。为了更清晰地描述何时拥有一个对象、何时释放一个对象的所有权，Cocoa遵循下面的策略：  <br/>
 1）<strong>自己生成的对象，自己所持有。</strong>  <br/>
@@ -787,7 +787,7 @@ Notifications和KVO者是Cocoa对观察者模式的实践。尽管两者依赖�
 <code>retain</code>操作创建了一个对这个对象的强引用。只有这个对象的所有强引用都被释放后，这个对象才能够被销毁。这就有可能形成这样一个问题，就是我们常说的<code>retain</code>循环：当两个对象互相包含一个执行对方的强引用（可能不是直接引用对方，可能是通过其他对象形成的一条强引用链）。<br/>
 图一举例说明了一个潜在的<code>retain</code>循环。Document对象中包含每一页的Page对象的引用。而每个Page对象又包含一个属性，这个属性用来跟踪自己是属于哪个Document对象。如果Document对象拥有Page对象的强引用，而Page对象也拥有对Document对象的强引用，这两个对象就再也不能被释放了。Document对象的引用计数只有当Page对象是否后才能清零，而Page对象也只有在Document对象被销毁后才能被释放。<br/>
 图1：  <br/>
-<img src='http://yuxiaopeng.github.com/images/2014/07/retaincycles_2x.png' width='300' /> <br/>
+<img src='http://yuxiaopeng.github.io/images/2014/07/retaincycles_2x.png' width='300' /> <br/>
 解决这个问题的途径是使用弱引用。弱引用是指一种非拥有的对象，源对象只拥有指向目的对象的引用，但并没有对这个引用执行retain操作。<br/>
 为了保证对象图的完整，必须要有强引用（如果整个关系图中只有弱引用，page对象或paragraph对象就没有所有者，那么就会自动被销毁）。 Cocoa建立了一个规约：父对象拥有对子对象的强引用，子对象拥有对父对象的 弱引用。<br/>
 因此，在图一中，Document对象拥有对Page对象的强引用（需要执行<code>retain</code>操作），而Page对象拥有对Document对象的弱引用（不要执行<code>retain</code>操作）。<br/>
@@ -914,9 +914,9 @@ Cocoa的内存管理原则规定，一般返回的对象需要在其调用函数
   
   <entry>
     <title type="html"><![CDATA[设计模式之适配器模式Adapter]]></title>
-    <link href="http://yuxiaopeng.github.com/blog/2014/07/03/adapter-of-design-patterns/"/>
+    <link href="http://yuxiaopeng.github.io/blog/2014/07/03/adapter-of-design-patterns/"/>
     <updated>2014-07-03T18:36:00+08:00</updated>
-    <id>http://yuxiaopeng.github.com/blog/2014/07/03/adapter-of-design-patterns</id>
+    <id>http://yuxiaopeng.github.io/blog/2014/07/03/adapter-of-design-patterns</id>
     <content type="html"><![CDATA[<h3>1.何为适配器模式（Adapter）</h3>
 
 <p>将一个类的接口转换成客户希望的另外一个接口。Adapter模式使得原本由于接口不兼容而不能一起工作的那些类可以一起工作（Adapter有助于两个不兼容的接口一起工作）。
@@ -931,10 +931,10 @@ Cocoa的内存管理原则规定，一般返回的对象需要在其调用函数
 <p>实现Adapter模式的思路是：  <br/>
 第一种称为类适配器，主要通过继承和协议实现，首先需要有定义了客户端要使用的一套行为的协议，然后要用具体的适配器类实现这个协议。适配器类同时也要继承被适配者，它们之间的关系如图：</p>
 
-<p><img src="http://yuxiaopeng.github.com/images/2014/07/Class_Adapter.jpg">  <br>
+<p><img src="http://yuxiaopeng.github.io/images/2014/07/Class_Adapter.jpg">  <br>
 第二种称为对象适配器，与类适配器不同，对象适配器不继承被适配者，而是组合了一个对它的引用。实现为对象适配器时，它们的关系如图：</p>
 
-<p><img src="http://yuxiaopeng.github.com/images/2014/07/Object_Adapter.jpg"></p>
+<p><img src="http://yuxiaopeng.github.io/images/2014/07/Object_Adapter.jpg"></p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -1072,10 +1072,10 @@ Cocoa的内存管理原则规定，一般返回的对象需要在其调用函数
   
   <entry>
     <title type="html"><![CDATA[设计模式之单例模式Singleton]]></title>
-    <link href="http://yuxiaopeng.github.com/blog/2014/07/02/singleton-of-design-patterns/"/>
+    <link href="http://yuxiaopeng.github.io/blog/2014/07/02/singleton-of-design-patterns/"/>
     <updated>2014-07-02T17:28:00+08:00</updated>
-    <id>http://yuxiaopeng.github.com/blog/2014/07/02/singleton-of-design-patterns</id>
-    <content type="html"><![CDATA[<p><img src="http://yuxiaopeng.github.com/images/2014/07/singleton.jpg"></p>
+    <id>http://yuxiaopeng.github.io/blog/2014/07/02/singleton-of-design-patterns</id>
+    <content type="html"><![CDATA[<p><img src="http://yuxiaopeng.github.io/images/2014/07/singleton.jpg"></p>
 
 <h3>1.何为单例模式（Singleton）</h3>
 
@@ -1416,9 +1416,9 @@ Cocoa的内存管理原则规定，一般返回的对象需要在其调用函数
   
   <entry>
     <title type="html"><![CDATA[iOS核心技术之：内存管理之一基本概念]]></title>
-    <link href="http://yuxiaopeng.github.com/blog/2014/07/01/memory-management-1/"/>
+    <link href="http://yuxiaopeng.github.io/blog/2014/07/01/memory-management-1/"/>
     <updated>2014-07-01T18:30:00+08:00</updated>
-    <id>http://yuxiaopeng.github.com/blog/2014/07/01/memory-management-1</id>
+    <id>http://yuxiaopeng.github.io/blog/2014/07/01/memory-management-1</id>
     <content type="html"><![CDATA[<h3>内存模型</h3>
 
 <h3>isa指针</h3>
@@ -1469,14 +1469,14 @@ Cocoa的内存管理原则规定，一般返回的对象需要在其调用函数
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Person实例包含5个实例变量，其中3个为指针变量（isa、name、birthday），另一个为int变量（age）。一个int变量会占用4个字节的内存，所以一个Person实例总共会占用16个字节的内存空间，如下图：</p>
 
-<p><img src='http://yuxiaopeng.github.com/images/2014/07/Person_In_Memory_Size.png' /></p>
+<p><img src='http://yuxiaopeng.github.io/images/2014/07/Person_In_Memory_Size.png' /></p>
 
 <h3>栈内存</h3>
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>栈</strong>（stack）是指内存中的另一块区域，和堆是分开的。为这两类内存区域分别取名堆和栈，是为了能够形象地描述这两个概念。堆，包含了大量无序的对象，需要通过指针来保存这些对象在堆中的地址。栈，则会按后进先出（LIFO）的规则保存一组<strong>帧</strong>（frame）。  <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;当程序执行某个方法（或函数）时，会从栈中分配一块内存空间，这块内存空间称为栈帧。栈帧负责保存程序在方法内声明的变量的值。在方法内声明的变量称为<strong>局部变量</strong>（local variable）。  <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;当某个应用启动并运行<code>main</code>函数时，它的栈帧会被保存在栈的底部。当<code>main</code>调用另一个方法（或函数）时，这个方法（或函数）的栈帧会压入栈的顶部。被调用的方法还可以再调用其他方法，依此类推，最终会在栈中形成一个塔状的栈帧序列 。当被调用的方法（或函数）结束时，程序会将其从栈帧中“弹出”并释放。如果同一个方法再次被调用，则应用会创建一个全新的的栈帧，并将其压入栈的顶部。如图：  <br/>
-<img src='http://yuxiaopeng.github.com/images/2014/07/Person_Method_Stack.png' /></p>
+<img src='http://yuxiaopeng.github.io/images/2014/07/Person_Method_Stack.png' /></p>
 
 <h3>对象所有权</h3>
 
@@ -1501,10 +1501,10 @@ Cocoa的内存管理原则规定，一般返回的对象需要在其调用函数
   
   <entry>
     <title type="html"><![CDATA[Hadoop集群环境搭建及配置]]></title>
-    <link href="http://yuxiaopeng.github.com/blog/2014/04/02/setup-and-configuration-hadoop-environment/"/>
+    <link href="http://yuxiaopeng.github.io/blog/2014/04/02/setup-and-configuration-hadoop-environment/"/>
     <updated>2014-04-02T09:06:00+08:00</updated>
-    <id>http://yuxiaopeng.github.com/blog/2014/04/02/setup-and-configuration-hadoop-environment</id>
-    <content type="html"><![CDATA[<p><img src="http://yuxiaopeng.github.com/images/2014/04/hadoop-elephant_logo.png"></p>
+    <id>http://yuxiaopeng.github.io/blog/2014/04/02/setup-and-configuration-hadoop-environment</id>
+    <content type="html"><![CDATA[<p><img src="http://yuxiaopeng.github.io/images/2014/04/hadoop-elephant_logo.png"></p>
 
 <h3>1.环境准备</h3>
 
@@ -1948,10 +1948,10 @@ Cocoa的内存管理原则规定，一般返回的对象需要在其调用函数
   
   <entry>
     <title type="html"><![CDATA[Ocotopress个性化配置]]></title>
-    <link href="http://yuxiaopeng.github.com/blog/2014/02/11/ocotopress-personalized-configuration/"/>
+    <link href="http://yuxiaopeng.github.io/blog/2014/02/11/ocotopress-personalized-configuration/"/>
     <updated>2014-02-11T14:51:00+08:00</updated>
-    <id>http://yuxiaopeng.github.com/blog/2014/02/11/ocotopress-personalized-configuration</id>
-    <content type="html"><![CDATA[<p><img src="http://yuxiaopeng.github.com/images/2014/02/octopress.png"></p>
+    <id>http://yuxiaopeng.github.io/blog/2014/02/11/ocotopress-personalized-configuration</id>
+    <content type="html"><![CDATA[<p><img src="http://yuxiaopeng.github.io/images/2014/02/octopress.png"></p>
 
 <h3>1、添加个人域名</h3>
 
@@ -2119,10 +2119,10 @@ Cocoa的内存管理原则规定，一般返回的对象需要在其调用函数
   
   <entry>
     <title type="html"><![CDATA[使用Octopress搭建博客]]></title>
-    <link href="http://yuxiaopeng.github.com/blog/2014/02/10/create-a-blog-using-octopress/"/>
+    <link href="http://yuxiaopeng.github.io/blog/2014/02/10/create-a-blog-using-octopress/"/>
     <updated>2014-02-10T16:17:00+08:00</updated>
-    <id>http://yuxiaopeng.github.com/blog/2014/02/10/create-a-blog-using-octopress</id>
-    <content type="html"><![CDATA[<p><img src="http://yuxiaopeng.github.com/images/2014/02/github_page_and-octopress.png"></p>
+    <id>http://yuxiaopeng.github.io/blog/2014/02/10/create-a-blog-using-octopress</id>
+    <content type="html"><![CDATA[<p><img src="http://yuxiaopeng.github.io/images/2014/02/github_page_and-octopress.png"></p>
 
 <h3>1、安装 Git.</h3>
 
@@ -2369,10 +2369,10 @@ rake setup_github_pages</p>
   
   <entry>
     <title type="html"><![CDATA[Hello Github Pages]]></title>
-    <link href="http://yuxiaopeng.github.com/blog/2013/11/18/hello-github-pages/"/>
+    <link href="http://yuxiaopeng.github.io/blog/2013/11/18/hello-github-pages/"/>
     <updated>2013-11-18T11:56:00+08:00</updated>
-    <id>http://yuxiaopeng.github.com/blog/2013/11/18/hello-github-pages</id>
-    <content type="html"><![CDATA[<p><img src="http://yuxiaopeng.github.com/images/2013/11/octopress-logo.png"></p>
+    <id>http://yuxiaopeng.github.io/blog/2013/11/18/hello-github-pages</id>
+    <content type="html"><![CDATA[<p><img src="http://yuxiaopeng.github.io/images/2013/11/octopress-logo.png"></p>
 
 <h3>大家好，我是Roc，欢迎大家关注我的小站！</h3>
 
